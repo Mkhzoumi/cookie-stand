@@ -171,59 +171,113 @@ for(let i =0 ; i<15 ; i++){
 
 //paris
 const paris = {
-    minCust:20,
-    maxCust:38,
-    avgCookie:2.3,
-    avgCustPerHr:[],
-    cookPurchEachHr:[],
-    rand:function () {
-      return Math.random() * (this.maxCust - this.minCust) + this.minCust;
-    },
-    avgCust: function(){
-      for(let i=0 ; i < 14 ; i++){
-        this.avgCustPerHr[i]=this.rand();
-        this.cookPurchEachHr[i]=Math.floor(this.avgCustPerHr[i]*this.avgCookie);
-      }
-    },
-  
-  };
-  paris.avgCust();
-  
-  container=document.getElementById('cont');
-  locationName=document.createElement('h1');
-  container.appendChild(locationName);
-  locationName.textContent='Paris';
-  
-  
-  unorderedList=document.createElement('ul');
-  container.appendChild(unorderedList);
-  
-  amPm='';
-  list='';
-  total=0;
-  clock=5;
-  
-  for(let i =0 ; i<15 ; i++){
-    list=document.createElement('li');
-    unorderedList.appendChild(list);
-    if (clock < 12 ){
-      clock++;
-    }else{
-      clock=1;
-    }if(clock < 12 && i<6){
-      amPm='am';
+  minCust:20,
+  maxCust:38,
+  avgCookie:2.3,
+  avgCustPerHr:[],
+  cookPurchEachHr:[],
+  rand:function () {
+    return Math.random() * (this.maxCust - this.minCust) + this.minCust;
+  },
+  avgCust: function(){
+    for(let i=0 ; i < 14 ; i++){
+      this.avgCustPerHr[i]=this.rand();
+      this.cookPurchEachHr[i]=Math.floor(this.avgCustPerHr[i]*this.avgCookie);
     }
-    if(i>=6){
-      amPm='pm';
-    }
-    if(i<14){
-      list.textContent=`${clock} ${amPm}: ${paris.cookPurchEachHr[i]}`;
-      total=total+paris.cookPurchEachHr[i];
-    }else{
-      list.textContent=`total: ${total}`;
-    }
+  },
+
+};
+paris.avgCust();
+
+container=document.getElementById('cont');
+locationName=document.createElement('h1');
+container.appendChild(locationName);
+locationName.textContent='Paris';
+
+
+unorderedList=document.createElement('ul');
+container.appendChild(unorderedList);
+
+amPm='';
+list='';
+total=0;
+clock=5;
+
+for(let i =0 ; i<15 ; i++){
+  list=document.createElement('li');
+  unorderedList.appendChild(list);
+  if (clock < 12 ){
+    clock++;
+  }else{
+    clock=1;
+  }if(clock < 12 && i<6){
+    amPm='am';
   }
-  
+  if(i>=6){
+    amPm='pm';
+  }
+  if(i<14){
+    list.textContent=`${clock} ${amPm}: ${paris.cookPurchEachHr[i]}`;
+    total=total+paris.cookPurchEachHr[i];
+  }else{
+    list.textContent=`total: ${total}`;
+  }
+}
+
+//lima
+const lima = {
+  minCust:11,
+  maxCust:38,
+  avgCookie:3.7,
+  avgCustPerHr:[],
+  cookPurchEachHr:[],
+  rand:function () {
+    return Math.random() * (this.maxCust - this.minCust) + this.minCust;
+  },
+  avgCust: function(){
+    for(let i=0 ; i < 14 ; i++){
+      this.avgCustPerHr[i]=this.rand();
+      this.cookPurchEachHr[i]=Math.floor(this.avgCustPerHr[i]*this.avgCookie);
+    }
+  },
+
+};
+lima.avgCust();
+
+container=document.getElementById('cont');
+locationName=document.createElement('h1');
+container.appendChild(locationName);
+locationName.textContent='Lima';
+
+
+unorderedList=document.createElement('ul');
+container.appendChild(unorderedList);
+
+amPm='';
+list='';
+total=0;
+clock=5;
+
+for(let i =0 ; i<15 ; i++){
+  list=document.createElement('li');
+  unorderedList.appendChild(list);
+  if (clock < 12 ){
+    clock++;
+  }else{
+    clock=1;
+  }if(clock < 12 && i<6){
+    amPm='am';
+  }
+  if(i>=6){
+    amPm='pm';
+  }
+  if(i<14){
+    list.textContent=`${clock} ${amPm}: ${lima.cookPurchEachHr[i]}`;
+    total=total+lima.cookPurchEachHr[i];
+  }else{
+    list.textContent=`total: ${total}`;
+  }
+}
 
 
 
