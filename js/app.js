@@ -25,6 +25,7 @@ const seatle = {
     }
   },
 
+
   render: function(){
 
     container.appendChild(locationName);
@@ -86,6 +87,7 @@ const tokyo = {
     }
   },
 
+
   render: function(){
     container=document.getElementById('cont');
     locationName=document.createElement('h1');
@@ -119,6 +121,7 @@ const tokyo = {
         list.textContent=`total: ${total}`;
       }
     }
+
 
   }
 };
@@ -187,6 +190,8 @@ const dubai = {
 
 dubai.avgCust();
 dubai.render();
+
+
 
 
 
@@ -307,9 +312,3 @@ const lima = {
 
 lima.avgCust();
 lima.render();
-
-
-
-
-
-
