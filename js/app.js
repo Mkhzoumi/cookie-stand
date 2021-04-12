@@ -44,7 +44,7 @@ lima.avgCust();
 let container=document.getElementById('cont');
 let table=document.createElement('table');
 container.appendChild(table);
-container.appendChild(locationName);
+
 
 
 let tbEl='';
