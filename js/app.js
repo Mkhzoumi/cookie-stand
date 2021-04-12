@@ -20,7 +20,7 @@ const seatle = {
 seatle.avgCust();
 
 let container=document.getElementById('cont');
-let locationName=document.createElement('h1');
+let locationName=document.createElement('h2');
 container.appendChild(locationName);
 locationName.textContent='Seattle';
 
@@ -77,7 +77,7 @@ const tokyo = {
 tokyo.avgCust();
 
 container=document.getElementById('cont');
-locationName=document.createElement('h1');
+locationName=document.createElement('h2');
 container.appendChild(locationName);
 locationName.textContent='Tokyo';
 
@@ -134,7 +134,7 @@ const dubai = {
 dubai.avgCust();
 
 container=document.getElementById('cont');
-locationName=document.createElement('h1');
+locationName=document.createElement('h2');
 container.appendChild(locationName);
 locationName.textContent='Dubai';
 
@@ -190,7 +190,7 @@ const paris = {
 paris.avgCust();
 
 container=document.getElementById('cont');
-locationName=document.createElement('h1');
+locationName=document.createElement('h2');
 container.appendChild(locationName);
 locationName.textContent='Paris';
 
@@ -245,7 +245,7 @@ const lima = {
 lima.avgCust();
 
 container=document.getElementById('cont');
-locationName=document.createElement('h1');
+locationName=document.createElement('h2');
 container.appendChild(locationName);
 locationName.textContent='Lima';
 
