@@ -44,6 +44,7 @@ lima.avgCust();
 let container=document.getElementById('cont');
 let table=document.createElement('table');
 container.appendChild(table);
+container.appendChild(locationName);
 
 
 let tbEl='';
@@ -56,7 +57,6 @@ function tableHeaderRow(){
   let clock=5;
 
   for(let i =0 ; i<15 ; i++){
-
     tbEl=document.createElement('td');
     headerRow.appendChild(tbEl);
 
@@ -149,8 +149,6 @@ tableFooterRow();
 
 
 
-
-
 // lab06
 // let container=document.getElementById('cont');
 // let locationName=document.createElement('h1');
@@ -159,6 +157,7 @@ tableFooterRow();
 // let list='';
 // let total=0;
 // let clock=5;
+
 
 // //seattle
 // const seatle = {
@@ -459,7 +458,6 @@ tableFooterRow();
 
 // lima.avgCust();
 // lima.render();
-
 
 
 
