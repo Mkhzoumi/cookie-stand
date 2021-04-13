@@ -1,3 +1,3 @@
-# *lab-06 : cookie-stand*
-## *this lab was about using Objects to make a data for a cookie store*
+# *lab-07 : cookie-stand*
+## *this lab was about making objects using constructor function*
 ## *author: humam mkhzoumi*
