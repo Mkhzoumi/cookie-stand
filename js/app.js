@@ -39,6 +39,10 @@ paris.avgCust();
 lima.avgCust();
 
 
+
+
+
+
 // creating the tables
 
 let container=document.getElementById('cont');
@@ -111,6 +115,8 @@ paris.render();
 lima.render();
 
 
+
+
 function tableFooterRow(){
   let footerRow=document.createElement('tr');
   table.appendChild(footerRow);
@@ -138,6 +144,29 @@ function tableFooterRow(){
 }
 tableFooterRow();
 
+
+
+
+
+// adding objects from user
+let form = document.getElementById('userEnter');
+form.addEventListener('submit',handleSubmitting);
+
+function handleSubmitting(event) {
+  event.preventDefault();
+  let locName = event.target.location.value;
+  let userMin = parseInt(event.target.min.value);
+  let userMax = parseInt(event.target.max.value);
+  let avg = parseFloat(event.target.avg.value);
+
+  let newLoc = new Store(locName,userMin,userMax,avg);
+  newLoc.avgCust();
+  newLoc.render();
+
+  table.setAttribute('id','table');
+  document.getElementById('table').deleteRow(allObjects.length);
+  tableFooterRow();
+}
 
 
 
