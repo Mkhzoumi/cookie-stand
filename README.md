@@ -1,3 +1,3 @@
-# *lab-08 : cookie-stand*
-## *we added some photos to the main page and we linked the main page the sales page*
+# *lab-09 : cookie-stand*
+## *we added new objects from a user inputs using forms and events*
 ## *author: humam mkhzoumi*
