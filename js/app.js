@@ -163,8 +163,7 @@ function handleSubmitting(event) {
   newLoc.avgCust();
   newLoc.render();
 
-  table.setAttribute('id','table');
-  document.getElementById('table').deleteRow(allObjects.length);
+  table.deleteRow(allObjects.length);
   tableFooterRow();
 }
 
