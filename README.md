@@ -1,3 +1,3 @@
-# *lab-09 : cookie-stand*
-## *we added new objects from a user inputs using forms and events*
+# *lab-10 : styling-cookie-stand*
+## *we added some style to the cookie stand project*
 ## *author: humam mkhzoumi*
