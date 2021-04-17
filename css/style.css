@@ -1,12 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
-table {              
+body{
+  background-color: whitesmoke;
+}
+
+
+
+table {          
+  position: absolute;
+  top: 30%;    
+  margin-top: 10%;
     border-collapse: collapse;
     width: 100%;
+    
   }
   
-  th, td {
+  
+th, td {
     text-align: left;
     padding: 8px;
   }
   
-  tr:nth-child(even) {background-color: #f2f2f2;}
+tr:nth-child(even) {background-color: #333;
+color: whitesmoke;}
+
+#userEnter{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+#avg {
+  margin-bottom: 3px;
+  margin-left: 31px;
+
+}
+#location{
+  margin-left: 78px;
+}
+#min{
+  margin-left: 3px;
+}
+#avg , #location , #min ,#max{
+  margin-bottom: 4px;
+}
+input[type=submit]{
+  background-color: #333;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin-top: 30px;
+  cursor: pointer;
+  float: right;
+}
+
+
+header{
+  background-color: #333;
+  color: whitesmoke;
+  height: 100px;
+}
+header h1{
+  text-align: center;
+  font-size: 300%;
+  font-family: 'Dancing Script', cursive;
+}
+
+#topNav{
+  overflow: hidden;
+  float: right;
+}
+#topNav a{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+#topNav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+#firstImg{
+  position: relative;
+  left: 20%;
+  height: 50%;
+
+}
+
+#family{
+  margin-left: 22%;
+  display: block;
+  margin-bottom: 1%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 19%;
+  position: relative;
+  left: 2%;
+
+
+  display: inline-block;
+}
+
+.card:hover {
+  box-shadow: 0 15px 25px 0 rgba(0,0,0,0.8);
+}
+
+.container {
+  padding: 2px 16px;
+}
+.container h4{
+  font-size: 20px;
+}
+
+
+
+footer{
+  color:white;
+  background-color:#333;
+  text-align: center;
+  font-size: 35px;
+}
+
+footer a{
+  color: gray;
+}
+
+.lastwords{
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  color: gray;
+}
+
